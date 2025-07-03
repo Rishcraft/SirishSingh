@@ -26,6 +26,68 @@
 
 <style>
 
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .text h1, .text h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  #typing-animation {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+  }
+  .about-mf .about-img img {
+    margin-left: 0;
+    width: 100%;
+  }
+  .img-about {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    background-color: rgba(0,0,0,0.9);
+  }
+  .one-third {
+    display: none;
+  }
+  .text h1 {
+    font-size: 22px;
+  }
+  .text h2 {
+    font-size: 16px;
+  }
+  .about-info li {
+    flex-direction: column;
+  }
+  .counter-wrap .text span.number {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading-section h2 {
+    font-size: 22px;
+  }
+  .btn-primary, .btn-white {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+  .img-about .overlay {
+    padding: 20px;
+  }
+  .about-info span {
+    font-size: 14px;
+  }
+}
+
+
 /*======================================
 //--//-->   ABOUT
 ======================================*/
@@ -109,7 +171,10 @@
   transform: scale(1.1);
 }
 
-
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
 </style>
 
 
@@ -213,7 +278,7 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/My Ghibli Image.png" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="images/circular_image.png" class="img-fluid rounded b-shadow-a" alt="">
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
